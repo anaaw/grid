@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE</title>
+    <style> /* estilo da pagina teste */
+         /* Mexendo na caixa pai */  
+        .container{
+            background-color: coral;
+            height: 700px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; 
+            gap: 20px;
+            justify-content: center;
+            align-items: center;                                                                        
+        }
+
+        .card{
+            background-color: cornflowerblue;
+            height: 200px;
+        }
+
+        @media(max-width:800px){
+        .card{
+            background-color: darkblue;
+            font-size: 100px;
+            color: darkred;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- caixa pai -->
+        <div class="card">ABC</div>
+        <div class="card">ABC</div>
+        <div class="card">ABC</div>
+        <div class="card">ABC</div>
+        <div class="card">ABC</div>
+        <div class="card">ABC</div>
+    </div>
+</body>
+
+</html>
